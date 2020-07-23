@@ -1,0 +1,22 @@
+language: cpp
+
+before_install:
+  - sudo apt-get install -y libgtest-dev cmake
+  - pip install gcovr
+  - cd /usr/src/gtest
+  - sudo cmake CMakeLists.txt
+  - sudo make
+  - sudo cp *.a /usr/lib
+  - cd "${TRAVIS_BUILD_DIR}"
+
+script:
+  - cmake CMakeLists.txt
+  - make
+  - ./tests
+
+after_success:
+  - gcovr --filter src/ --xml -o coverage.xml
+  - bash <(curl -s https://codecov.io/bash) -f coverage.xml
+
+notifications:
+  email: false
