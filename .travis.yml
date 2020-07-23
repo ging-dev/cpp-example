@@ -17,8 +17,9 @@ script:
   - ./tests
 
 after_success:
-  - gcovr --root ${TRAVIS_BUILD_DIR} --filter src/ --xml -o coverage.xml
-  - bash <(curl -s https://codecov.io/bash) -f coverage.xml
+  - cd ..
+  - gcovr --filter src/ --xml --output build/coverage.xml
+  - bash <(curl -s https://codecov.io/bash) -f build/coverage.xml
 
 notifications:
   email: false
