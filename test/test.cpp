@@ -11,6 +11,8 @@ TEST (GingLib, isPrime) {
     ASSERT_TRUE(app.isPrime(2));
     ASSERT_FALSE(app.isPrime(1));
     ASSERT_FALSE(app.isPrime(6));
+    ASSERT_FALSE(app.isPrime(10));
+    ASSERT_TRUE(app.isPrime(11));
 }
 
 int main(int argc, char **argv) {

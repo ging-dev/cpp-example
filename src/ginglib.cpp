@@ -12,7 +12,8 @@ bool GingLib::isPrime(int x)
 {
     int i, n = sqrt(x);
     if (x > 1) {
-        for (i = 2; i <= n; i++) if (x%i == 0) return false;
+        for (i = 2; i <= n; i++)
+            if (x%i == 0) return false;
         return true;
     } else return false;
 }
