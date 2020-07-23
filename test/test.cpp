@@ -1,4 +1,4 @@
-#include "../src/ginglib.h"
+#include "ginglib.h"
 #include "gtest/gtest.h"
 
 GingLib app;
@@ -17,6 +17,7 @@ TEST (GingLib, isPrime) {
 
 TEST (GingLib, isSquare) {
     ASSERT_TRUE(app.isSquare(4));
+    ASSERT_FALSE(app.isSquare(5));
 }
 
 int main(int argc, char **argv) {

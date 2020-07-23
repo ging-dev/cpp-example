@@ -10,12 +10,14 @@ before_install:
   - cd "${TRAVIS_BUILD_DIR}"
 
 script:
-  - cmake CMakeLists.txt
-  - make
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cmake --build .
   - ./tests
 
 after_success:
-  - gcovr --filter src/ --xml -o coverage.xml
+  - gcovr --root ${TRAVIS_BUILD_DIR} --filter src/ --xml -o coverage.xml
   - bash <(curl -s https://codecov.io/bash) -f coverage.xml
 
 notifications:
