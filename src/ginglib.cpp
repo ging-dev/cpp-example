@@ -1,12 +1,6 @@
 #include "ginglib.h"
 #include <cmath>
 
-// Cộng 2 số nguyên
-int GingLib::add(int a, int b)
-{
-    return (a + b);
-}
-
 // Kiểm tra số nguyên tố
 bool GingLib::isPrime(int x)
 {

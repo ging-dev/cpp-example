@@ -16,7 +16,7 @@ file(GLOB SOURCE "src/*.cpp")
 add_library(ging ${SOURCE})
 
 # Test file
-file(GLOB_RECURSE TEST "test/*.cpp")
+file(GLOB TEST "test/*.cpp")
 
 # Running tests
 add_executable(tests ${TEST} ${SOURCE})
