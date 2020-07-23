@@ -17,3 +17,10 @@ bool GingLib::isPrime(int x)
         return true;
     } else return false;
 }
+
+// Kiểm tra số chính phương
+bool GingLib::isSquare(int x)
+{
+    if (pow(sqrt(x), 2) == x) return true;
+    return false;
+}

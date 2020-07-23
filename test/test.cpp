@@ -15,6 +15,10 @@ TEST (GingLib, isPrime) {
     ASSERT_TRUE(app.isPrime(11));
 }
 
+TEST (GingLib, isSquare) {
+    ASSERT_TRUE(app.isSquare(4));
+}
+
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
