@@ -18,7 +18,7 @@ script:
 
 after_success:
   - cd ..
-  - gcovr --filter src/ --xml --output build/coverage.xml
+  - gcovr --filter src/ --filter include/ --xml --output build/coverage.xml
   - bash <(curl -s https://codecov.io/bash) -f build/coverage.xml
 
 notifications:
