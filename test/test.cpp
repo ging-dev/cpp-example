@@ -18,6 +18,7 @@ TEST (GingLib, isSquare) {
 
 TEST(GingLib, OddOrEven) {
     EXPECT_EQ(0, app.OddOrEven(4));
+    EXPECT_EQ(1, app.OddOrEven(3));
 }
 
 int main(int argc, char **argv) {
