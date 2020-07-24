@@ -20,3 +20,12 @@ bool GingLib::isSquare(int x)
         return true;
     return false;
 }
+
+// Kiểm tra chẵn lẻ
+
+int GingLib::OddOrEven(int x)
+{
+    if (x%2 == 0)
+        return 0;
+    return 1;
+}

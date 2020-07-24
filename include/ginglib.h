@@ -4,8 +4,9 @@
 class GingLib
 {
     public:
-        bool isPrime(int x);
-        bool isSquare(int x);
+        bool isPrime(int);
+        bool isSquare(int);
+        int OddOrEven(int);
 };
 
 #endif

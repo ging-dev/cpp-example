@@ -16,6 +16,10 @@ TEST (GingLib, isSquare) {
     ASSERT_FALSE(app.isSquare(5));
 }
 
+TEST(GingLib, OddOrEven) {
+    EXPECT_EQ(0, app.OddOrEven(4));
+}
+
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
