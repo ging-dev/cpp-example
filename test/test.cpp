@@ -21,6 +21,10 @@ TEST(GingLib, OddOrEven) {
     EXPECT_EQ(1, app.OddOrEven(3));
 }
 
+TEST(GingLib, Factorial) {
+    EXPECT_EQ(2, app.Factorial(2));
+}
+
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

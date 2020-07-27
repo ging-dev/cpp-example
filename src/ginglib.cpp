@@ -22,10 +22,18 @@ bool GingLib::isSquare(int x)
 }
 
 // Kiểm tra chẵn lẻ
-
 int GingLib::OddOrEven(int x)
 {
     if (x%2 == 0)
         return 0;
     return 1;
+}
+
+int GingLib::Factorial(int x)
+{
+    int result = 1, i;
+    for (i = 2; i <= x; i++) {
+        result *= i;
+    }
+    return $result;
 }

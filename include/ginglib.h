@@ -7,6 +7,7 @@ class GingLib
         bool isPrime(int);
         bool isSquare(int);
         int OddOrEven(int);
+        int Factorial(int);
 };
 
 #endif
