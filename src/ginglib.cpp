@@ -35,5 +35,5 @@ int GingLib::Factorial(int x)
     for (i = 2; i <= x; i++) {
         result *= i;
     }
-    return $result;
+    return result;
 }
